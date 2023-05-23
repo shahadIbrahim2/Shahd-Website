@@ -128,15 +128,6 @@ body{
     --body--fs: 1rem;
 }
 
-@media (min-width:800px){
-    :root {
-        --h1:1.4rem;
-        --h2:1.0rem;
-        --h3:.5rem;
-        --body--fs: 1rem;
-    }
-
-}
 body{
     background-color: #12101a ;
     color: #d4e0f9d7;
@@ -230,7 +221,7 @@ strong{
     position: relative;
     top:100px;
     font-size: 16px;
-    color:#f4e6ff ;
+    color:#aea3f8 ;
     padding: 1rem 9%;
     left: 10px;
     top:100px;
@@ -242,7 +233,7 @@ strong{
 .scroll-container {
     border: 1px solid transparent;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .scroll-text {
@@ -251,8 +242,7 @@ strong{
     width: 600px;
     font-weight: 600;
     color: #18041a5a;
-    animation: my-animation 5s linear  alternate;
-    transition: ease 0.5s;
+    /* animation: my-animation 5s linear  alternate; */
   }
 
   .scroll-text:hover{
@@ -260,15 +250,6 @@ strong{
     transform:  translateX(200px);
 
   }
-  @keyframes my-animation {
-    from {
-      transform: translateX(-100%);
-    }
-    to {
-     
-      transform: translateX(40%);
-    }}
-
 
 
 /*services  section*/
@@ -468,6 +449,100 @@ gap: 5rem;
     align-items: center;
     padding: 1rem 7%;
     font-size:12px;
-    
 }
+
+/*Media query for phones*/
+
+
+@media (max-width:800px){
+ 
+    .heading{
+        position: relative;
+        left:200px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    /*Project section*/
+
+    .imgnbta{
+        width: 80px;
+        height: 80px;
+    }
+    .content4{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left:200px;
+        width: 400px;
+        height: 250px;
+    }
+    .text-project{
+        font-size: 10px;
+    }
+
+    /*Service section*/
+
+    .service-container{
+        flex-direction: column;
+        justify-content: left;
+        text-align: left;
+        position: relative;
+        left:150px;
+    }
+    .container{
+       font-size: 20px;
+       width: 380px;
+       height: 500px;
+    }
+
+    .container p {
+    }
+
+
+
+     /*About me section*/
+
+     .scroll-text{
+        font-size: 22px;
+        position: relative;
+        bottom:150px;
+        right:200px;
+        text-align: center;
+        align-items: center;
+
+     }
+     .scroll-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+     }
+
+     .aboutme{
+        font-size: 18px;
+     }
+
+     /*home section*/
+     .home-content{
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 200px;
+        
+     }
+
+     /*navigation bar*/
+
+     .header{
+
+        height: 100px;
+        width: max-content;
+     }
+    
+
+}
+
 
