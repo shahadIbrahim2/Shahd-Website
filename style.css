@@ -6,23 +6,32 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
-body{
-    background: rgb(231,82,202);
-    background: radial-gradient(circle, rgba(231,82,202,0.6728816526610644) 0%, rgba(29,24,50,1) 63%);
+html{
+    background-color: #000;
 }
 
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: "Poppins";
+
+}
+
+.home{
+    background-image: url("imgs/vid-1.gif");
+    background-size:81%;
+}
 .header {
     text-decoration: none;
     position:fixed;
     display: flex;
+    background-color: #000;
+    border-bottom: 2px solid #fff;
     justify-content: space-between;
     top: 0;
     left:0;
     width:100%;
     padding:0.7rem 9%;
     align-items: center;
-    background-color: rgb(18, 16, 26) ;
     z-index: 100;
 } 
 
@@ -37,14 +46,14 @@ body{
     outline: none;
     margin: 1rem;
     padding: 7px 16px;
-    border-color:rgb(203, 195, 238) ;
+    border-color:rgb(255, 255, 255) ;
     cursor: pointer;
     transition: ease 0.5s ;
     text-decoration: none;
   }
   
   .active, .btn1:hover {
-    color: #ff0def;
+    color: rgb(247, 255, 0);
   }
 
 
@@ -75,11 +84,10 @@ body{
 }
 
 
-/*About me section */
 
 
   .content2 {
-    opacity: .7;
+    opacity: 1;
     background-size:cover;
     position: sticky;
     bottom: 0;
@@ -99,11 +107,12 @@ body{
     gap: 1rem;
     transition: ease 0.7s;
     overflow: hidden;
+    transition: ease 0.5s;
   }
   .content1:hover  {
     background: rgba(0, 0, 0, 0.486);
-    box-shadow: 1.5rem 1rem 0 #ff0def;
-    border: 2px solid #ff0def;
+    box-shadow: 1.5rem 1rem 0 rgb(255, 255, 255);;
+    border: 2px solid rgb(255, 255, 255);;
     flex-wrap: nowrap;
 
   }
@@ -120,19 +129,11 @@ body{
     font-weight: 800;
     cursor: pointer;
     font-size: 1rem;
-}
-:root {
-    --h1:1.4rem;
-    --h2:1.3rem;
-    --h3:3rem;
-    --body--fs: 1rem;
+    color: #fff718;
 }
 
-body{
-    background-color: #12101a ;
-    color: #d4e0f9d7;
-    font-family:Poppins;
-}
+
+
 
 section{
     min-height: 100vh;
@@ -154,10 +155,10 @@ section{
     width: 3rem;
     height: 3rem;
     background: transparent;
-    border: .1rem solid rgba(255, 10, 218, 0.863);
+    border: .1rem solid rgb(255, 255, 255);;
     border-radius: 50%;
     margin-bottom: 2rem;
-    color: rgb(252, 44, 221);
+    color: rgb(255, 255, 255);
     margin: 2rem 1rem 4rem 0;
     transition: .5s ease;
 }
@@ -167,16 +168,17 @@ section{
 }
 .social-media a:hover{
     border: transparent ;
-    border: .1rem solid aqua;
-    color: aqua;
+    border: .1rem solid rgb(247, 255, 0);
+    color: rgb(247, 255, 0);
 }
 
 .btn{
     display: inline-block;
     padding: 1rem 0.5rem;
-    background-color: rgb(255, 0, 208);
+    background-color: rgb(255, 255, 255);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem rgb(255, 0, 208);
+    color: black;
+    box-shadow: 0 0 1rem rgb(255, 255, 255);;
     letter-spacing: 0rem;
     margin-bottom: 3rem;
     margin-left: 1rem;
@@ -196,12 +198,12 @@ section{
 }
 
 strong{
-    color:aqua;
+    color:#ffffff;
     font-size: 29px;
 }
 
 .major{
-    color:aqua;
+    color:#ffffff;
 }
 
 /*about me section*/
@@ -209,6 +211,8 @@ strong{
     margin-left: 2rem;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+
  
 }
 .container{
@@ -217,31 +221,33 @@ strong{
     margin: 1rem;
 }
 .aboutme{
-    font-family: Poppins;
+    font-family: "Poppins";
     position: relative;
     top:100px;
     font-size: 16px;
-    color:#aea3f8 ;
+    /* color:#effcbe ; */
     padding: 1rem 9%;
-    left: 10px;
     top:100px;
     z-index: 99;
     line-height: 1.8;
     width: 700px;
+    color: #fff;
+    border-top: #fff718 2px solid;
+    border-bottom: #fff718 2px solid;
+    transition: ease 0.5s;
+
+
 }
 
-.scroll-container {
-    border: 1px solid transparent;
-    width: 100%;
-    /* overflow: hidden; */
-  }
   
   .scroll-text {
-    transform: translateX(40%);
+    transform: translateX(50%);
     font-size: 100px;
     width: 600px;
     font-weight: 600;
-    color: #18041a5a;
+    color: #ffffff7f;
+    transition: ease 0.5s;
+
     /* animation: my-animation 5s linear  alternate; */
   }
 
@@ -265,7 +271,7 @@ gap: 5rem;
 
 .heading {
     margin-bottom: 4rem;
-    color: #c2dde6;
+    color: #ffffff;
     font-size: 35px;
     text-align: center;
 }
@@ -284,8 +290,15 @@ gap: 5rem;
 }
 
 .list-service li:hover {
-    color: greenyellow;
+    color: #fff718;
 
+}
+
+.container p {
+    color: #fff;
+}
+.container li {
+    color: #fff;
 }
 
 
@@ -293,25 +306,27 @@ gap: 5rem;
 {
     width: 380px;
     height: 430px;
-    background: rgb(18, 16, 26);
+    background: #000;
     border-radius: 2rem;
     padding: 1rem;
+    color: #fff;
     text-align: left;
     border: .2rem solid transparent;
+    border: 2px #fff solid;
+
     transition:  0.5s ease;
     margin: 2rem;
 }
 .container h2{
     font-size: 20px;
-    color:#a3b5f8;
+    color:#fff;
 }
 .container:hover {
-    box-shadow: 1.5rem 1rem 0 #ff0def;
+    border: 2px #fff718 solid;
+    box-shadow: 1.5rem 1rem 0 #fff718;
 }
 
-.title-of-service{
-    color: #ff0def ;
-}
+
 
 /*project section*/
 /*Projects*/
@@ -407,7 +422,8 @@ gap: 5rem;
     bottom: 0;
     background: rgba(0, 0, 0, 0.228);
     border-radius:10px;
-    color: #f1f1f1;
+    color: #fff;
+    border: #fff 2px solid;
     justify-content: center;
     width: 100%;
     height: 200px;
@@ -430,7 +446,7 @@ gap: 5rem;
 .content4:hover {
     transform: translateY(33px);
     background: rgba(0, 0, 0, 0.486);
-    box-shadow: 1.5rem 1rem 0 #ae20b0;
+    box-shadow: 1.5rem 1rem 0 #fff718;
 }
 .project i{
     font-size: 16px;
@@ -438,7 +454,7 @@ gap: 5rem;
     top: 100px;  
 }
 .project i:hover{
-    color:#ff0def;
+    color:#fff718;
     cursor: pointer;
 }
 /*footer*/
@@ -496,8 +512,7 @@ gap: 5rem;
        height: 500px;
     }
 
-    .container p {
-    }
+   
 
 
 
@@ -506,7 +521,7 @@ gap: 5rem;
      .scroll-text{
         font-size: 22px;
         position: relative;
-        bottom:150px;
+        bottom:160px;
         right:200px;
         text-align: center;
         align-items: center;
@@ -516,7 +531,7 @@ gap: 5rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        text-align: left;
+        text-align: right;
         width: 100%;
      }
 
@@ -525,6 +540,13 @@ gap: 5rem;
      }
 
      /*home section*/
+
+     .home {
+        background-position: -260px;
+        background-size: cover;
+        image-rendering: optimizeQuality;
+        width: 100%;
+     }
      .home-content{
 
         display: flex;
