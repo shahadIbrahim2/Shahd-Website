@@ -17,8 +17,6 @@ body{
 }
 
 .home{
-    background-image: url("imgs/vid-1.gif");
-    background-size:81%;
 }
 .header {
     text-decoration: none;
@@ -223,7 +221,7 @@ strong{
 .aboutme{
     font-family: "Poppins";
     position: relative;
-    top:100px;
+    top:80px;
     font-size: 16px;
     /* color:#effcbe ; */
     padding: 1rem 9%;
@@ -259,15 +257,7 @@ strong{
 
 
 /*services  section*/
-.service-container{
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
 
-gap: 5rem;
-
-}
 
 .heading {
     margin-bottom: 4rem;
@@ -470,13 +460,13 @@ gap: 5rem;
 /*Media query for phones*/
 
 
-@media (max-width:800px){
+@media (max-width:600px){
  
     .heading{
         position: relative;
         left:200px;
         text-align: center;
-        font-size: 26px;
+        font-size: 56px;
     }
 
     /*Project section*/
@@ -488,13 +478,16 @@ gap: 5rem;
     .content4{
         display: flex;
         justify-content: center;
+        align-items:center;
         position: relative;
         left:200px;
-        width: 400px;
-        height: 250px;
+        width: 630px;
+        height: 450px;
+        border: 2px #ff18dc solid;
+        box-shadow: 1.5rem 1rem 0 #e418ff;
     }
     .text-project{
-        font-size: 10px;
+        font-size: 25px;
     }
 
     /*Service section*/
@@ -504,12 +497,19 @@ gap: 5rem;
         justify-content: left;
         text-align: left;
         position: relative;
-        left:150px;
+        left:100px;
+        
     }
     .container{
-       font-size: 20px;
-       width: 380px;
-       height: 500px;
+       font-size: 30px;
+       width: 440px;
+       height: 800px;
+       border: 2px #cec80e solid;
+       box-shadow: 1.5rem 1rem 0 #fff718;
+    }
+    .list-service li {
+        color: #7bfe84;
+    
     }
 
    
@@ -518,15 +518,17 @@ gap: 5rem;
 
      /*About me section*/
 
-     .scroll-text{
-        font-size: 22px;
+     .scroll-text {
+        font-size: 50px;
         position: relative;
-        bottom:160px;
-        right:200px;
-        text-align: center;
-        align-items: center;
-
-     }
+        right:300px;
+        top:90px;
+        font-weight: 600;
+        color: #ffffff7f;
+        transition: ease 0.5s;
+    
+        /* animation: my-animation 5s linear  alternate; */
+      }
      .scroll-container{
         display: flex;
         flex-direction: column;
@@ -536,24 +538,46 @@ gap: 5rem;
      }
 
      .aboutme{
-        font-size: 18px;
+        font-size: 30px;
+     }
+
+     .img-aboutme{
+        position: relative;
+        top:300px;
      }
 
      /*home section*/
 
-     .home {
-        background-position: -260px;
-        background-size: cover;
-        image-rendering: optimizeQuality;
-        width: 100%;
-     }
-     .home-content{
-
-        display: flex;
-        justify-content: center;
+     .content1  {
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.228);
+        border-radius: 10%;
+        color: #f1f1f1;
+        width: 580px;
+        height: 960px;
+        padding: 3rem 10%;
         position: relative;
-        left: 200px;
-        
+        left: 150px;
+        margin: 3rem;
+        box-shadow: 1.5rem 1rem 0 rgb(255, 255, 255);;
+        border: 2px solid rgb(255, 255, 255);;
+        flex-wrap: nowrap;
+      }
+
+      .social-media a {
+        font-size: 35px;
+        border: none;
+    }
+    
+    .home-intro{
+        font-size: 50px;
+    }
+ 
+     .content1{
+        font-size: 20px;
+     }
+     .social-media{
+        font-size: 53px;
      }
 
      /*navigation bar*/
@@ -562,6 +586,7 @@ gap: 5rem;
 
         height: 100px;
         width: max-content;
+        font-size: 20px;
      }
     
 
