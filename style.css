@@ -17,6 +17,8 @@ body{
 }
 
 .home{
+    display: flex;
+    justify-content: center;
 }
 .header {
     text-decoration: none;
@@ -553,14 +555,15 @@ strong{
         background: rgba(0, 0, 0, 0.228);
         border-radius: 10%;
         color: #f1f1f1;
-        width: 580px;
+        width: 560px;
         height: 960px;
         padding: 3rem 10%;
         position: relative;
-        left: 150px;
+        left: 190px;
         margin: 3rem;
         box-shadow: 1.5rem 1rem 0 rgb(255, 255, 255);;
-        border: 2px solid rgb(255, 255, 255);;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
         flex-wrap: nowrap;
       }
 
