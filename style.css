@@ -53,7 +53,7 @@ body{
   }
   
   .active, .btn1:hover {
-    color: rgb(247, 255, 0);
+    color: #ff18dc;
   }
 
 
@@ -129,7 +129,7 @@ body{
     font-weight: 800;
     cursor: pointer;
     font-size: 1rem;
-    color: #fff718;
+    color: #ff18dc;
 }
 
 
@@ -232,8 +232,8 @@ strong{
     line-height: 1.8;
     width: 700px;
     color: #fff;
-    border-top: #fff718 2px solid;
-    border-bottom: #fff718 2px solid;
+    border-top: #fd5fe5 2px solid;
+    border-bottom: #fd5fe5 2px solid;
     transition: ease 0.5s;
 
 
@@ -282,7 +282,7 @@ strong{
 }
 
 .list-service li:hover {
-    color: #fff718;
+    color: #fd5fe5;
 
 }
 
@@ -314,8 +314,8 @@ strong{
     color:#fff;
 }
 .container:hover {
-    border: 2px #fff718 solid;
-    box-shadow: 1.5rem 1rem 0 #fff718;
+    border: 2px #fd5fe5 solid;
+    box-shadow: 1.5rem 1rem 0 #fd5fe5;
 }
 
 
@@ -346,7 +346,7 @@ strong{
 .container1 .card:hover .content {
 	    transform: translateX(33px);
         background: rgba(0, 0, 0, 0.486);
-        box-shadow: 1.5rem 1rem 0 #ff0def;
+        box-shadow: 1.5rem 1rem 0 #fd5fe5;
     
 }
 
@@ -397,7 +397,7 @@ strong{
 }
 
 .contentBx i:hover{
-    color: #ff0def;
+    color: #fd5fe5;
     cursor: pointer;
 }
 
@@ -438,7 +438,7 @@ strong{
 .content4:hover {
     transform: translateY(33px);
     background: rgba(0, 0, 0, 0.486);
-    box-shadow: 1.5rem 1rem 0 #fff718;
+    box-shadow: 1.5rem 1rem 0 #fd5fe5;
 }
 .project i{
     font-size: 16px;
@@ -446,7 +446,7 @@ strong{
     top: 100px;  
 }
 .project i:hover{
-    color:#fff718;
+    color:#fd5fe5;
     cursor: pointer;
 }
 /*footer*/
@@ -506,11 +506,11 @@ strong{
        font-size: 30px;
        width: 440px;
        height: 800px;
-       border: 2px #cec80e solid;
-       box-shadow: 1.5rem 1rem 0 #fff718;
+       border: 2px #ff18dc solid;
+       box-shadow: 1.5rem 1rem 0 #e418ff;
     }
     .list-service li {
-        color: #7bfe84;
+        color: #ff18dc;
     
     }
 
